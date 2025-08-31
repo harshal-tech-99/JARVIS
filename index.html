@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Chat Container -->
+    <div class="chat-container" id="chat-container" style="display:none;">
+        <!-- Header with new buttons -->
+        <header>
+            <img src="https://i.postimg.cc/v8JwL7BP/edith1.jpg" alt="Bot Logo" class="bot-logo" />
+            <h1>JARVIS</h1>
+            <div class="header-buttons">
+             
+                <button id="about-btn">ℹ️</button>
+                
+            </div>
+        </header>
+
+        <div class="chat-box" id="chat-box">
+            <div id="typing" class="typing hidden"  role="status">
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+
+            <div class="message bot-message">
+                <span>Hello sir... <br>how can i help you </span></span>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <input type="file" id="file-input" accept="image/*" hidden />
+            <button id="upload-btn" title="Upload photo">🖼️</button>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Modal for Bot Information -->
+    <div id="botInfoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> 
+
+            <h2> 🤖 Chatbot: JARVIS (Just A Rather Very Intelligent System) </h2>
+            <p>
+                JARVIS is your personal AI assistant. <br>
+                It can chat with you, answer questions, process images, and soon 
+                will also support voice input/output like a futuristic assistant.  
+                The bot is built using HTML, CSS, JavaScript, and AI APIs to 
+                provide smooth and intelligent conversations.  
+            </p> <br>
+
+            <p><strong>Features:</strong>
+            <li>Chat with JARVIS and ask it anything you like!</li>
+            <li>Upload an image and JARVIS will describe it.</li>
+            <li>Powered by advanced generative AI models, JARVIS is capable of intelligent conversations.</li>
+        <br>
+
+        <p><strong>Technologies Used:</strong>
+            <li><strong>Front-end:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Back-end:</strong> Integration with AI models like GPT, Gemini, etc.</li>
+            <li><strong>Image Processing:</strong> Uses AI to analyze and describe uploaded images.</li>
+        <br>
+            <p><strong>Future Updates</strong>
+                <li>Support Talk-to-Speach</li>
+                <li>Support Image Generation</li>
+                <li>Weather Reports</li>
+            </p>  
+        </p>
+        </div>
+    </div>
+   <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-ring"></div>
+        <p class="loading-text"><span id="loading-text"></span></p>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
